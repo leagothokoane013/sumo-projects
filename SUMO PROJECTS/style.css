@@ -1,0 +1,198 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('sumo-pic.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Container for main content */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.2); /* Light overlay for header */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+header p {
+    font-size: 1.5em;
+    color: #eeeeee;
+}
+
+/* Services section */
+.services {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services p {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+ul {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+/* Call to Action button */
+.cta {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: #00796b;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #004d40;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.1em;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background for footer */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+footer a {
+    color: #76c7c0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    ul li {
+        font-size: 1em;
+    }
+
+    .button {
+        font-size: 1em;
+    }
+}
+
+/* Gallery styling for the second page */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.gallery-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 40px);
+}
+
+.gallery-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    color: #333;
+    text-align: center;
+}
+
+/* Responsive gallery */
+@media (max-width: 768px) {
+    .gallery-item {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        width: calc(100% - 40px);
+    }
+}
+
+/* Style for the logo */
+.logo {
+    display: block;
+    margin: 0 auto 30px auto; /* Centers the logo and adds margin below */
+    width: 80%; /* Makes the logo responsive and fills 80% of the container's width */
+    max-width: 300px; /* Sets a maximum width to prevent it from becoming too large */
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.9); /* More opaque background for better contrast */
+    padding: 15px; /* Adds space around the logo */
+    border: 4px solid #00796b; /* Slightly thicker border in theme color */
+    border-radius: 12px; /* Softens the edges with rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Stronger shadow for more depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds smooth animation on hover */
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Slight zoom-in effect on hover */
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.5); /* Intensifies the shadow on hover */
+}
+
+/* Optional gradient background for the logo */
+.logo {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6));
+}
